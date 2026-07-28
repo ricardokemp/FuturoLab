@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contato | FuturoLab</title>
+
+    <!-- Meta Tags SEO -->
+    <meta name="description"
+        content="Entre em contato com o FuturoLab. Tire suas dúvidas, faça sugestões ou agende uma conversa. Estamos aqui para ajudar!">
+    <meta name="keywords"
+        content="contato FuturoLab, dúvidas, sugestões, WhatsApp, email">
+    <meta name="author" content="FuturoLab">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Contato | FuturoLab">
+    <meta property="og:description"
+        content="Entre em contato com o FuturoLab. Tire suas dúvidas e comece sua jornada na tecnologia.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ricardokemp.github.io/FuturoLab/contato.html">
+    <meta property="og:image" content="https://ricardokemp.github.io/FuturoLab/images/og-image.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/logo-futurolab.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- CSS Principal -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- ============================================
+    MENU / NAVBAR
+    ============================================ -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo-futurolab.png" alt="FuturoLab" height="36">
+                <span class="fw-bold ms-2">FuturoLab</span>
+            </a>
+
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="cursos.html">Cursos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sobre.html">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contato.html">Contato</a>
+                    </li>
+                    <li class="nav-item ms-lg-3">
+                        <a href="cursos.html" class="btn btn-primary btn-sm rounded-pill px-4">
+                            <i class="fas fa-rocket me-2"></i>Começar
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ============================================
+    HEADER DA PÁGINA
+    ============================================ -->
+
+    <section class="page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <span class="badge-custom mb-3">
+                        <i class="fas fa-envelope me-2"></i>Fale Conosco
+                    </span>
+                    <h1 class="display-4 fw-bold">
+                        Entre em <span class="gradient-text">contato</span>
+                    </h1>
+                    <p class="lead text-muted">
+                        Tem dúvidas sobre nossos cursos? Quer saber mais sobre
+                        o FuturoLab? Estamos aqui para ajudar! Preencha o
+                        formulário ou fale conosco pelo WhatsApp.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+    CONTATO - FORMULÁRIO E INFORMAÇÕES
+    ============================================ -->
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-5">
+                <!-- Formulário -->
+                <div class="col-lg-6">
+                    <div class="glass-card p-4">
+                        <h3 class="fw-bold mb-4">
+                            <i class="fas fa-pen text-primary me-2"></i>
+                            Envie uma mensagem
+                        </h3>
+                        <form id="contactForm" action="#" method="POST">
+                            <div class="mb-3">
+                                <label for="nome" class="form-label">Seu nome *</label>
+                                <input type="text" class="form-control" id="nome" placeholder="Digite seu nome completo" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Seu e-mail *</label>
+                                <input type="email" class="form-control" id="email" placeholder="Digite seu melhor e-mail" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="telefone" class="form-label">Telefone / WhatsApp</label>
+                                <input type="tel" class="form-control" id="telefone" placeholder="(11) 99999-9999">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="assunto" class="form-label">Assunto *</label>
+                                <select class="form-select" id="assunto" required>
+                                    <option value="">Selecione um assunto...</option>
+                                    <option value="duvidas">Dúvidas sobre cursos</option>
+                                    <option value="inscricao">Inscrição e matrícula</option>
+                                    <option value="parcerias">Parcerias e colaborações</option>
+                                    <option value="imprensa">Imprensa e mídia</option>
+                                    <option value="sugestoes">Sugestões e feedback</option>
+                                    <option value="outros">Outros</option>
+                                </select>
+                            </div>
+
+                            <div class="mb-4">
+                                <label for="mensagem" class="form-label">Mensagem *</label>
+                                <textarea class="form-control" id="mensagem" rows="5" placeholder="Escreva sua mensagem aqui..." required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-lg rounded-pill w-100">
+                                <i class="fas fa-paper-plane me-2"></i>
+                                Enviar Mensagem
+                            </button>
+
+                            <p class="text-muted small mt-3 text-center">
+                                <i class="fas fa-lock me-1"></i>
+                                Seus dados estão seguros. Não compartilhamos com terceiros.
+                            </p>
+                        </form>
+
+                        <!-- Mensagem de sucesso (escondida inicialmente) -->
+                        <div id="successMessage" class="alert alert-success mt-4" style="display:none;">
+                            <i class="fas fa-check-circle me-2"></i>
+                            <strong>Mensagem enviada com sucesso!</strong>
+                            <p class="mb-0">Entraremos em contato em breve. Obrigado!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Informações de contato -->
+                <div class="col-lg-6">
+                    <div class="glass-card p-4">
+                        <h3 class="fw-bold mb-4">
+                            <i class="fas fa-address-card text-primary me-2"></i>
+                            Nossos canais
+                        </h3>
+
+                        <div class="contact-info">
+                            <!-- WhatsApp -->
+                            <div class="d-flex align-items-start mb-4">
+                                <div class="contact-icon">
+                                    <i class="fab fa-whatsapp fa-2x text-success"></i>
+                                </div>
+                                <div class="ms-3">
+                                    <h6 class="fw-bold mb-1">WhatsApp</h6>
+                                    <p class="text-muted mb-1">(11) 95862-3469</p>
+                                    <a href="https://wa.me/5511958623469" target="_blank" class="btn btn-success btn-sm rounded-pill">
+                                        <i class="fab fa-whatsapp me-1"></i> Falar Agora
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- E-mail -->
+                            <div class="d-flex align-items-start mb-4">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope fa-2x text-primary"></i>
+                                </div>
+                                <div class="ms-3">
+                                    <h6 class="fw-bold mb-1">E-mail</h6>
+                                    <p class="text-muted mb-0">contato@futurolab.com.br</p>
+                                    <p class="text-muted small">Respondemos em até 24h</p>
+                                </div>
+                            </div>
+
+                            <!-- Telefone -->
+                            <div class="d-flex align-items-start mb-4">
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone fa-2x" style="color:#06b6d4;"></i>
+                                </div>
+                                <div class="ms-3">
+                                    <h6 class="fw-bold mb-1">Telefone</h6>
+                                    <p class="text-muted mb-0">(11) 95862-3469</p>
+                                    <p class="text-muted small">Segunda a Sexta, 9h às 18h</p>
+                                </div>
+                            </div>
+
+                            <!-- Endereço -->
+                            <div class="d-flex align-items-start mb-4">
+                                <div class="contact-icon">
+                                    <i class="fas fa-map-marker-alt fa-2x text-danger"></i>
+                                </div>
+                                <div class="ms-3">
+                                    <h6 class="fw-bold mb-1">Endereço</h6>
+                                    <p class="text-muted mb-0">São Paulo, Brasil</p>
+                                    <p class="text-muted small">Atendimento 100% online</p>
+                                </div>
+                            </div>
+
+                            <!-- Redes Sociais -->
+                            <div class="mt-4 pt-3 border-top border-secondary">
+                                <h6 class="fw-bold mb-3">Redes Sociais</h6>
+                                <div class="d-flex gap-3">
+                                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                                    <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                                    <a href="#" class="social-icon"><i class="fab fa-tiktok"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+    FAQ - PERGUNTAS FREQUENTES DE CONTATO
+    ============================================ -->
+
+    <section class="py-5 section-dark">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="badge-custom mb-3">
+                    <i class="fas fa-circle-question me-2"></i>Dúvidas Frequentes
+                </span>
+                <h2 class="section-title">
+                    Perguntas <span class="gradient-text">frequentes</span>
+                </h2>
+                <p class="section-description">
+                    As respostas para as perguntas mais comuns sobre o FuturoLab.
+                </p>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="accordion" id="faqContato">
+                        <!-- FAQ 1 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq1">
+                                    <i class="fas fa-clock me-3 text-primary"></i>
+                                    Quanto tempo leva para responderem?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqContato">
+                                <div class="accordion-body">
+                                    Nossa equipe responde todas as mensagens em até <strong>24 horas úteis</strong>.
+                                    Para dúvidas urgentes, recomendamos entrar em contato pelo WhatsApp.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 2 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq2">
+                                    <i class="fas fa-laptop me-3 text-primary"></i>
+                                    Os cursos são 100% online?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqContato">
+                                <div class="accordion-body">
+                                    Sim! Todos os nossos cursos são <strong>100% online</strong> com vídeos gravados,
+                                    exercícios práticos e suporte via comunidade exclusiva e WhatsApp.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 3 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq3">
+                                    <i class="fas fa-credit-card me-3 text-primary"></i>
+                                    Quais formas de pagamento são aceitas?
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqContato">
+                                <div class="accordion-body">
+                                    Aceitamos <strong>cartão de crédito</strong> (parcelado em até 12x),
+                                    <strong>boleto bancário</strong> e <strong>PIX</strong>.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 4 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq4">
+                                    <i class="fas fa-certificate me-3 text-primary"></i>
+                                    O certificado é reconhecido?
+                                </button>
+                            </h2>
+                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqContato">
+                                <div class="accordion-body">
+                                    Sim! Todos os cursos oferecem <strong>certificado digital</strong>
+                                    com carga horária, reconhecido em todo o território nacional.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 5 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq5">
+                                    <i class="fas fa-graduation-cap me-3 text-primary"></i>
+                                    Posso começar quando quiser?
+                                </button>
+                            </h2>
+                            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqContato">
+                                <div class="accordion-body">
+                                    Sim! Você pode se inscrever a qualquer momento e começar a estudar
+                                    <strong>imediatamente</strong> após a confirmação do pagamento.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+    CTA - VAMOS CONVERSAR
+    ============================================ -->
+
+    <section class="py-5">
+        <div class="container">
+            <div class="cta-box glass-card text-center p-5">
+                <span class="badge-custom mb-3">
+                    <i class="fas fa-comment-dots me-2"></i>Vamos Conversar
+                </span>
+                <h2 class="display-5 fw-bold mb-3">
+                    Quer saber mais? Fale com a <span class="gradient-text">gente</span>!
+                </h2>
+                <p class="lead text-muted mb-4">
+                    Nossa equipe está pronta para tirar suas dúvidas e ajudar
+                    você a começar sua jornada no mundo da tecnologia.
+                </p>
+                <div class="d-flex flex-wrap justify-content-center gap-3">
+                    <a href="https://wa.me/5511958623469" target="_blank"
+                        class="btn btn-success btn-lg rounded-pill px-5">
+                        <i class="fab fa-whatsapp me-2"></i>
+                        Falar no WhatsApp
+                    </a>
+                    <a href="mailto:contato@futurolab.com.br"
+                        class="btn btn-outline-light btn-lg rounded-pill px-5">
+                        <i class="fas fa-envelope me-2"></i>
+                        Enviar E-mail
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+    FOOTER
+    ============================================ -->
+
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="footer-brand">
+                        <img src="images/logo-futurolab.png" alt="FuturoLab" height="40">
+                        <h5 class="fw-bold mt-3">FuturoLab</h5>
+                        <p class="text-muted small">
+                            Aprenda hoje. Construa o amanhã.
+                        </p>
+                    </div>
+                    <div class="footer-social mt-3">
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-md-2">
+                    <h6 class="fw-bold">Cursos</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="curso-ia.html" class="footer-link">IA</a></li>
+                        <li><a href="curso-python.html" class="footer-link">Python</a></li>
+                        <li><a href="curso-automacao.html" class="footer-link">Automação</a></li>
+                        <li><a href="cursos.html" class="footer-link">Ver todos</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-2">
+                    <h6 class="fw-bold">Institucional</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="sobre.html" class="footer-link">Sobre</a></li>
+                        <li><a href="blog.html" class="footer-link">Blog</a></li>
+                        <li><a href="contato.html" class="footer-link">Contato</a></li>
+                        <li><a href="#" class="footer-link">Carreiras</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4">
+                    <h6 class="fw-bold">Fale Conosco</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <i class="fas fa-envelope text-primary me-2"></i>
+                            <a href="mailto:contato@futurolab.com.br" class="footer-link">
+                                contato@futurolab.com.br
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <i class="fab fa-whatsapp text-success me-2"></i>
+                            <a href="https://wa.me/5511958623469" target="_blank" class="footer-link">
+                                (11) 95862-3469
+                            </a>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt text-primary me-2"></i>
+                            <span class="text-muted">São Paulo, Brasil</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr class="border-secondary mt-4">
+
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="text-muted small mb-0">
+                        &copy; 2026 FuturoLab. Todos os direitos reservados.
+                    </p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="#" class="text-muted small me-3">Política de Privacidade</a>
+                    <a href="#" class="text-muted small me-3">Termos de Uso</a>
+                    <a href="#" class="text-muted small">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============================================
+    BOTÃO WHATSAPP FLUTUANTE
+    ============================================ -->
+
+    <a href="https://wa.me/5511958623469" target="_blank"
+        class="whatsapp-float" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- ============================================
+    BOTÃO VOLTAR AO TOPO
+    ============================================ -->
+
+    <button class="back-to-top" id="backToTop" aria-label="Voltar ao topo">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- ============================================
+    SCRIPTS
+    ============================================ -->
+
+    <!-- Bootstrap 5 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+    <!-- JavaScript Principal -->
+    <script src="js/main.js"></script>
+
+    <!-- Script do Formulário -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.getElementById('contactForm');
+            const successMessage = document.getElementById('successMessage');
+
+            if (form) {
+                form.addEventListener('submit', function(e) {
+                    e.preventDefault();
+
+                    // Simula o envio do formulário
+                    const submitBtn = form.querySelector('button[type="submit"]');
+                    const originalText = submitBtn.innerHTML;
+                    
+                    // Mostra loading
+                    submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin me-2"></i> Enviando...';
+                    submitBtn.disabled = true;
+
+                    // Simula delay de envio
+                    setTimeout(function() {
+                        // Mostra mensagem de sucesso
+                        successMessage.style.display = 'block';
+                        
+                        // Restaura o botão
+                        submitBtn.innerHTML = originalText;
+                        submitBtn.disabled = false;
+                        
+                        // Limpa o formulário
+                        form.reset();
+                        
+                        // Esconde a mensagem após 5 segundos
+                        setTimeout(function() {
+                            successMessage.style.display = 'none';
+                        }, 5000);
+                    }, 2000);
+                });
+            }
+        });
+    </script>
+
+</body>
+
+</html>

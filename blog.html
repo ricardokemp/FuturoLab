@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Blog | FuturoLab</title>
+
+    <!-- Meta Tags SEO -->
+    <meta name="description"
+        content="Artigos sobre Inteligência Artificial, programação, automação e tecnologia. Fique por dentro das últimas tendências do mercado.">
+    <meta name="keywords"
+        content="blog IA, artigos tecnologia, inteligência artificial, programação, automação, FuturoLab">
+    <meta name="author" content="FuturoLab">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Blog | FuturoLab">
+    <meta property="og:description"
+        content="Artigos sobre tecnologia, IA, programação e automação. Acompanhe as últimas tendências do mercado.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ricardokemp.github.io/FuturoLab/blog.html">
+    <meta property="og:image" content="https://ricardokemp.github.io/FuturoLab/images/og-image.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/logo-futurolab.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- CSS Principal -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- ============================================
+    MENU / NAVBAR
+    ============================================ -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo-futurolab.png" alt="FuturoLab" height="36">
+                <span class="fw-bold ms-2">FuturoLab</span>
+            </a>
+
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="cursos.html">Cursos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sobre.html">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contato.html">Contato</a>
+                    </li>
+                    <li class="nav-item ms-lg-3">
+                        <a href="cursos.html" class="btn btn-primary btn-sm rounded-pill px-4">
+                            <i class="fas fa-rocket me-2"></i>Começar
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ============================================
+    HEADER DA PÁGINA
+    ============================================ -->
+
+    <section class="page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <span class="badge-custom mb-3">
+                        <i class="fas fa-newspaper me-2"></i>Blog
+                    </span>
+                    <h1 class="display-4 fw-bold">
+                        Conteúdos para <span class="gradient-text">transformar</span> seu futuro
+                    </h1>
+                    <p class="lead text-muted">
+                        Artigos sobre Inteligência Artificial, programação, automação
+                        e as últimas tendências do mundo da tecnologia.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+    CATEGORIAS DO BLOG
+    ============================================ -->
+
+    <section class="py-4 section-dark">
+        <div class="container">
+            <div class="d-flex flex-wrap justify-content-center gap-2">
+                <button class="btn btn-primary rounded-pill px-4 filter-btn active" data-filter="todos">
+                    <i class="fas fa-th-list me-2"></i>Todos
+                </button>
+                <button class="btn btn-outline-light rounded-pill px-4 filter-btn" data-filter="ia">
+                    <i class="fas fa-robot me-2"></i>Inteligência Artificial
+                </button>
+                <button class="btn btn-outline-light rounded-pill px-4 filter-btn" data-filter="programacao">
+                    <i class="fas fa-code me-2"></i>Programação
+                </button>
+                <button class="btn btn-outline-light rounded-pill px-4 filter-btn" data-filter="automacao">
+                    <i class="fas fa-gears me-2"></i>Automação
+                </button>
+                <button class="btn btn-outline-light rounded-pill px-4 filter-btn" data-filter="carreira">
+                    <i class="fas fa-briefcase me-2"></i>Carreira
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+    ARTIGOS DO BLOG
+    ============================================ -->
+
+    <section class="py-5" id="artigos">
+        <div class="container">
+            <div class="row g-4">
+
+                <!-- Artigo 1 -->
+                <div class="col-lg-4 col-md-6 blog-item" data-categoria="ia">
+                    <article class="course-card glass-card">
+                        <div class="course-image">
+                            <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&h=300&fit=crop"
+                                alt="O que é Inteligência Artificial">
+                            <span class="course-level">IA</span>
+                        </div>
+                        <div class="course-body p-4">
+                            <div class="d-flex gap-2 mb-2">
+                                <span class="tag">IA</span>
+                                <span class="tag">Tecnologia</span>
+                            </div>
+                            <h4 class="course-title">O que é Inteligência Artificial?</h4>
+                            <p class="course-description">
+                                Entenda os fundamentos da IA, como ela funciona e como está transformando o mundo ao nosso redor.
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="text-muted small">
+                                    <i class="fas fa-calendar-alt me-1"></i> 15/01/2026
+                                </span>
+                                <span class="text-muted small">
+                                    <i class="fas fa-clock me-1"></i> 5 min
+                                </span>
+                            </div>
+                            <a href="blog-post-ia.html" class="btn btn-outline-primary rounded-pill w-100 mt-3">
+                                Ler Artigo <i class="fas fa-arrow-right ms-2"></i>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Artigo 2 -->
+                <div class="col-lg-4 col-md-6 blog-item" data-categoria="programacao">
+                    <article class="course-card glass-card">
+                        <div class="course-image">
+                            <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=600&h=300&fit=crop"
+                                alt="Por que aprender Python">
+                            <span class="course-level">Programação</span>
+                        </div>
+                        <div class="course-body p-4">
+                            <div class="d-flex gap-2 mb-2">
+                                <span class="tag">Python</span>
+                                <span class="tag">Programação</span>
+                            </div>
+                            <h4 class="course-title">Por que aprender Python em 2026?</h4>
+                            <p class="course-description">
+                                Descubra por que Python continua sendo a linguagem mais popular para iniciantes e profissionais.
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="text-muted small">
+                                    <i class="fas fa-calendar-alt me-1"></i> 10/01/2026
+                                </span>
+                                <span class="text-muted small">
+                                    <i class="fas fa-clock me-1"></i> 4 min
+                                </span>
+                            </div>
+                            <a href="#" class="btn btn-outline-primary rounded-pill w-100 mt-3">
+                                Ler Artigo <i class="fas fa-arrow-right ms-2"></i>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Artigo 3 -->
+                <div class="col-lg-4 col-md-6 blog-item" data-categoria="automacao">
+                    <article class="course-card glass-card">
+                        <div class="course-image">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=300&fit=crop"
+                                alt="Automação com IA">
+                            <span class="course-level">Automação</span>
+                        </div>
+                        <div class="course-body p-4">
+                            <div class="d-flex gap-2 mb-2">
+                                <span class="tag">Automação</span>
+                                <span class="tag">IA</span>
+                            </div>
+                            <h4 class="course-title">Como a IA está revolucionando a automação</h4>
+                            <p class="course-description">
+                                Conheça as principais tendências em automação com IA e como aplicar no dia a dia.
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="text-muted small">
+                                    <i class="fas fa-calendar-alt me-1"></i> 05/01/2026
+                                </span>
+                                <span class="text-muted small">
+                                    <i class="fas fa-clock me-1"></i> 6 min
+                                </span>
+                            </div>
+                            <a href="#" class="btn btn-outline-primary rounded-pill w-100 mt-3">
+                                Ler Artigo <i class="fas fa-arrow-right ms-2"></i>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Artigo 4 -->
+                <div class="col-lg-4 col-md-6 blog-item" data-categoria="carreira">
+                    <article class="course-card glass-card">
+                        <div class="course-image">
+                            <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=600&h=300&fit=crop"
+                                alt="Carreiras do futuro">
+                            <span class="course-level">Carreira</span>
+                        </div>
+                        <div class="course-body p-4">
+                            <div class="d-flex gap-2 mb-2">
+                                <span class="tag">Carreira</span>
+                                <span class="tag">Futuro</span>
+                            </div>
+                            <h4 class="course-title">As 10 profissões do futuro em tecnologia</h4>
+                            <p class="course-description">
+                                Descubra as carreiras mais promissoras na área de tecnologia para os próximos anos.
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="text-muted small">
+                                    <i class="fas fa-calendar-alt me-1"></i> 28/12/2025
+                                </span>
+                                <span class="text-muted small">
+                                    <i class="fas fa-clock me-1"></i> 7 min
+                                </span>
+                            </div>
+                            <a href="#" class="btn btn-outline-primary rounded-pill w-100 mt-3">
+                                Ler Artigo <i class="fas fa-arrow-right ms-2"></i>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Artigo 5 -->
+                <div class="col-lg-4 col-md-6 blog-item" data-categoria="ia">
+                    <article class="course-card glass-card">
+                        <div class="course-image">
+                            <img src="https://images.unsplash.com/photo-1686191128892-3a4db9f7c141?w=600&h=300&fit=crop"
+                                alt="ChatGPT na educação">
+                            <span class="course-level">IA</span>
+                        </div>
+                        <div class="course-body p-4">
+                            <div class="d-flex gap-2 mb-2">
+                                <span class="tag">ChatGPT</span>
+                                <span class="tag">Educação</span>
+                            </div>
+                            <h4 class="course-title">ChatGPT na educação: aliado ou vilão?</h4>
+                            <p class="course-description">
+                                Análise sobre como o ChatGPT pode ser usado para melhorar o aprendizado e potencializar resultados.
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="text-muted small">
+                                    <i class="fas fa-calendar-alt me-1"></i> 20/12/2025
+                                </span>
+                                <span class="text-muted small">
+                                    <i class="fas fa-clock me-1"></i> 5 min
+                                </span>
+                            </div>
+                            <a href="#" class="btn btn-outline-primary rounded-pill w-100 mt-3">
+                                Ler Artigo <i class="fas fa-arrow-right ms-2"></i>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Artigo 6 -->
+                <div class="col-lg-4 col-md-6 blog-item" data-categoria="programacao">
+                    <article class="course-card glass-card">
+                        <div class="course-image">
+                            <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=600&h=300&fit=crop"
+                                alt="Cibersegurança">
+                            <span class="course-level">Programação</span>
+                        </div>
+                        <div class="course-body p-4">
+                            <div class="d-flex gap-2 mb-2">
+                                <span class="tag">Segurança</span>
+                                <span class="tag">Tecnologia</span>
+                            </div>
+                            <h4 class="course-title">Cibersegurança: como se proteger no mundo digital</h4>
+                            <p class="course-description">
+                                Dicas essenciais para proteger seus dados e sua privacidade no ambiente digital.
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="text-muted small">
+                                    <i class="fas fa-calendar-alt me-1"></i> 15/12/2025
+                                </span>
+                                <span class="text-muted small">
+                                    <i class="fas fa-clock me-1"></i> 4 min
+                                </span>
+                            </div>
+                            <a href="#" class="btn btn-outline-primary rounded-pill w-100 mt-3">
+                                Ler Artigo <i class="fas fa-arrow-right ms-2"></i>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+
+            </div>
+
+            <!-- Mensagem quando não há artigos -->
+            <div id="noResults" class="text-center py-5" style="display:none;">
+                <i class="fas fa-search fa-3x text-muted mb-3"></i>
+                <h4 class="text-muted">Nenhum artigo encontrado</h4>
+                <p class="text-muted">Tente outra categoria ou filtro.</p>
+            </div>
+
+            <!-- Paginação -->
+            <nav class="mt-5">
+                <ul class="pagination-custom">
+                    <li class="page-item active">
+                        <a class="page-link" href="#">1</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">2</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">3</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">
+                            <i class="fas fa-chevron-right"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+
+    <!-- ============================================
+    NEWSLETTER
+    ============================================ -->
+
+    <section class="py-5 section-dark">
+        <div class="container">
+            <div class="cta-box glass-card text-center p-5">
+                <span class="badge-custom mb-3">
+                    <i class="fas fa-envelope-open-text me-2"></i>Newsletter
+                </span>
+                <h2 class="display-5 fw-bold mb-3">
+                    Receba nossos <span class="gradient-text">artigos</span> por e-mail
+                </h2>
+                <p class="lead text-muted mb-4">
+                    Inscreva-se para receber conteúdos exclusivos sobre
+                    Inteligência Artificial, programação e tecnologia.
+                </p>
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Digite seu melhor e-mail" style="border-radius: 50px 0 0 50px;">
+                            <button class="btn btn-primary rounded-pill px-4" style="border-radius: 0 50px 50px 0;" type="button">
+                                <i class="fas fa-paper-plane me-2"></i>Inscrever
+                            </button>
+                        </div>
+                        <p class="text-muted small mt-2">
+                            <i class="fas fa-lock me-1"></i>
+                            Não enviamos spam. Você pode cancelar a qualquer momento.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+    FOOTER
+    ============================================ -->
+
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="footer-brand">
+                        <img src="images/logo-futurolab.png" alt="FuturoLab" height="40">
+                        <h5 class="fw-bold mt-3">FuturoLab</h5>
+                        <p class="text-muted small">
+                            Aprenda hoje. Construa o amanhã.
+                        </p>
+                    </div>
+                    <div class="footer-social mt-3">
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-md-2">
+                    <h6 class="fw-bold">Cursos</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="curso-ia.html" class="footer-link">IA</a></li>
+                        <li><a href="curso-python.html" class="footer-link">Python</a></li>
+                        <li><a href="curso-automacao.html" class="footer-link">Automação</a></li>
+                        <li><a href="cursos.html" class="footer-link">Ver todos</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-2">
+                    <h6 class="fw-bold">Institucional</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="sobre.html" class="footer-link">Sobre</a></li>
+                        <li><a href="blog.html" class="footer-link">Blog</a></li>
+                        <li><a href="contato.html" class="footer-link">Contato</a></li>
+                        <li><a href="#" class="footer-link">Carreiras</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4">
+                    <h6 class="fw-bold">Fale Conosco</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <i class="fas fa-envelope text-primary me-2"></i>
+                            <a href="mailto:contato@futurolab.com.br" class="footer-link">
+                                contato@futurolab.com.br
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <i class="fab fa-whatsapp text-success me-2"></i>
+                            <a href="https://wa.me/5511958623469" target="_blank" class="footer-link">
+                                (11) 95862-3469
+                            </a>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt text-primary me-2"></i>
+                            <span class="text-muted">São Paulo, Brasil</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr class="border-secondary mt-4">
+
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="text-muted small mb-0">
+                        &copy; 2026 FuturoLab. Todos os direitos reservados.
+                    </p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="#" class="text-muted small me-3">Política de Privacidade</a>
+                    <a href="#" class="text-muted small me-3">Termos de Uso</a>
+                    <a href="#" class="text-muted small">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============================================
+    BOTÃO WHATSAPP FLUTUANTE
+    ============================================ -->
+
+    <a href="https://wa.me/5511958623469" target="_blank"
+        class="whatsapp-float" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- ============================================
+    BOTÃO VOLTAR AO TOPO
+    ============================================ -->
+
+    <button class="back-to-top" id="backToTop" aria-label="Voltar ao topo">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- ============================================
+    SCRIPTS
+    ============================================ -->
+
+    <!-- Bootstrap 5 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+    <!-- JavaScript Principal -->
+    <script src="js/main.js"></script>
+
+    <!-- Script de Filtro do Blog -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const blogItems = document.querySelectorAll('.blog-item');
+            const noResults = document.getElementById('noResults');
+
+            if (filterButtons.length > 0 && blogItems.length > 0) {
+                filterButtons.forEach(button => {
+                    button.addEventListener('click', function() {
+                        // Remove active de todos os botões
+                        filterButtons.forEach(btn => {
+                            btn.classList.remove('btn-primary');
+                            btn.classList.add('btn-outline-light');
+                        });
+
+                        // Adiciona active no botão clicado
+                        this.classList.remove('btn-outline-light');
+                        this.classList.add('btn-primary');
+
+                        const filter = this.dataset.filter;
+                        let visibleCount = 0;
+
+                        blogItems.forEach(item => {
+                            if (filter === 'todos' || item.dataset.categoria === filter) {
+                                item.style.display = 'block';
+                                visibleCount++;
+                            } else {
+                                item.style.display = 'none';
+                            }
+                        });
+
+                        // Mostra ou esconde mensagem de nenhum resultado
+                        if (noResults) {
+                            if (visibleCount === 0) {
+                                noResults.style.display = 'block';
+                            } else {
+                                noResults.style.display = 'none';
+                            }
+                        }
+                    });
+                });
+            }
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,1161 @@
+/* ==========================================
+   FUTUROLAB
+   style.css - Arquivo Principal
+   ========================================== */
+
+/* ==========================================
+   IMPORTAÇÃO DOS MÓDULOS
+   ========================================== */
+
+@import url("variables.css");
+@import url("components.css");
+@import url("animations.css");
+@import url("responsive.css");
+
+/* ==========================================
+   RESET E BASE
+   ========================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
+body {
+    font-family: var(--font);
+    background: var(--bg);
+    color: var(--white);
+    line-height: 1.6;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ==========================================
+   SCROLLBAR PERSONALIZADA
+   ========================================== */
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-dark);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-dark);
+}
+
+/* ==========================================
+   SELEÇÃO DE TEXTO
+   ========================================== */
+
+::selection {
+    background: var(--primary);
+    color: var(--white);
+}
+
+::-moz-selection {
+    background: var(--primary);
+    color: var(--white);
+}
+
+/* ==========================================
+   TIPOGRAFIA
+   ========================================== */
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    color: var(--white);
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 3.5rem;
+}
+
+h2 {
+    font-size: 2.8rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+h5 {
+    font-size: 1.2rem;
+}
+
+h6 {
+    font-size: 1rem;
+}
+
+p {
+    color: var(--text);
+    line-height: 1.8;
+}
+
+.lead {
+    font-size: 1.2rem;
+    color: var(--text);
+}
+
+/* ==========================================
+   SEÇÕES
+   ========================================== */
+
+section {
+    padding: 100px 0;
+    position: relative;
+}
+
+section:first-of-type {
+    padding-top: 0;
+}
+
+/* ==========================================
+   FUNDOS DAS SEÇÕES
+   ========================================== */
+
+.section-dark {
+    background: var(--bg-dark);
+}
+
+.section-light {
+    background: var(--bg-light);
+}
+
+.section-gradient {
+    background: linear-gradient(135deg, var(--bg-dark), var(--bg-light));
+}
+
+/* ==========================================
+   CONTAINER PERSONALIZADO
+   ========================================== */
+
+.container-custom {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1200px;
+}
+
+/* ==========================================
+   GRID PERSONALIZADO
+   ========================================== */
+
+.row-custom {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.col-custom {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+/* ==========================================
+   TEXTOS E CORES
+   ========================================== */
+
+.text-primary-custom {
+    color: var(--primary) !important;
+}
+
+.text-secondary-custom {
+    color: var(--secondary) !important;
+}
+
+.text-muted-custom {
+    color: var(--text-light) !important;
+}
+
+.text-white-custom {
+    color: var(--white) !important;
+}
+
+.bg-primary-custom {
+    background: var(--primary) !important;
+}
+
+.bg-dark-custom {
+    background: var(--bg-dark) !important;
+}
+
+.bg-light-custom {
+    background: var(--bg-light) !important;
+}
+
+.bg-card-custom {
+    background: var(--card) !important;
+}
+
+/* ==========================================
+   BORDAS
+   ========================================== */
+
+.border-custom {
+    border: 1px solid var(--border) !important;
+}
+
+.border-top-custom {
+    border-top: 1px solid var(--border) !important;
+}
+
+.border-bottom-custom {
+    border-bottom: 1px solid var(--border) !important;
+}
+
+.border-primary-custom {
+    border-color: var(--primary) !important;
+}
+
+.rounded-custom {
+    border-radius: var(--radius) !important;
+}
+
+.rounded-sm-custom {
+    border-radius: var(--radius-sm) !important;
+}
+
+.rounded-lg-custom {
+    border-radius: var(--radius-lg) !important;
+}
+
+/* ==========================================
+   SOMBRAS
+   ========================================== */
+
+.shadow-custom {
+    box-shadow: var(--shadow) !important;
+}
+
+.shadow-lg-custom {
+    box-shadow: var(--shadow-lg) !important;
+}
+
+.shadow-sm-custom {
+    box-shadow: var(--shadow-sm) !important;
+}
+
+/* ==========================================
+   ESPAÇAMENTOS PERSONALIZADOS
+   ========================================== */
+
+.space-xs {
+    margin-bottom: var(--space-xs) !important;
+}
+
+.space-sm {
+    margin-bottom: var(--space-sm) !important;
+}
+
+.space-md {
+    margin-bottom: var(--space-md) !important;
+}
+
+.space-lg {
+    margin-bottom: var(--space-lg) !important;
+}
+
+.space-xl {
+    margin-bottom: var(--space-xl) !important;
+}
+
+/* ==========================================
+   TRANSIÇÕES
+   ========================================== */
+
+.transition-custom {
+    transition: var(--transition) !important;
+}
+
+/* ==========================================
+   POSICIONAMENTO
+   ========================================== */
+
+.relative {
+    position: relative !important;
+}
+
+.absolute {
+    position: absolute !important;
+}
+
+.fixed {
+    position: fixed !important;
+}
+
+.sticky {
+    position: sticky !important;
+    top: 0;
+    z-index: 100;
+}
+
+/* ==========================================
+   DISPLAY
+   ========================================== */
+
+.flex-center {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.flex-between {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+}
+
+.flex-column-custom {
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+.grid-2 {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 30px !important;
+}
+
+.grid-3 {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 30px !important;
+}
+
+.grid-4 {
+    display: grid !important;
+    grid-template-columns: repeat(4, 1fr) !important;
+    gap: 30px !important;
+}
+
+/* ==========================================
+   ALTURA E LARGURA
+   ========================================== */
+
+.min-vh-100-custom {
+    min-height: 100vh !important;
+}
+
+.vh-100-custom {
+    height: 100vh !important;
+}
+
+.w-100-custom {
+    width: 100% !important;
+}
+
+.h-100-custom {
+    height: 100% !important;
+}
+
+/* ==========================================
+   OVERFLOW
+   ========================================== */
+
+.overflow-hidden-custom {
+    overflow: hidden !important;
+}
+
+.overflow-x-hidden {
+    overflow-x: hidden !important;
+}
+
+.overflow-y-auto {
+    overflow-y: auto !important;
+}
+
+/* ==========================================
+   Z-INDEX
+   ========================================== */
+
+.z-0 { z-index: 0 !important; }
+.z-1 { z-index: 1 !important; }
+.z-2 { z-index: 2 !important; }
+.z-3 { z-index: 3 !important; }
+.z-10 { z-index: 10 !important; }
+.z-100 { z-index: 100 !important; }
+.z-999 { z-index: 999 !important; }
+.z-9999 { z-index: 9999 !important; }
+
+/* ==========================================
+   OPACIDADE
+   ========================================== */
+
+.op-0 { opacity: 0 !important; }
+.op-25 { opacity: 0.25 !important; }
+.op-50 { opacity: 0.5 !important; }
+.op-75 { opacity: 0.75 !important; }
+.op-100 { opacity: 1 !important; }
+
+/* ==========================================
+   CURSOR
+   ========================================== */
+
+.cursor-pointer {
+    cursor: pointer !important;
+}
+
+.cursor-default {
+    cursor: default !important;
+}
+
+.cursor-not-allowed {
+    cursor: not-allowed !important;
+}
+
+/* ==========================================
+   USER SELECT
+   ========================================== */
+
+.user-select-none {
+    user-select: none !important;
+}
+
+.user-select-all {
+    user-select: all !important;
+}
+
+/* ==========================================
+   POINTER EVENTS
+   ========================================== */
+
+.pointer-events-none {
+    pointer-events: none !important;
+}
+
+.pointer-events-auto {
+    pointer-events: auto !important;
+}
+
+/* ==========================================
+   VISIBILIDADE
+   ========================================== */
+
+.visible-custom {
+    visibility: visible !important;
+}
+
+.invisible-custom {
+    visibility: hidden !important;
+}
+
+/* ==========================================
+   ANIMAÇÕES DE CARREGAMENTO
+   ========================================== */
+
+.loading {
+    position: relative;
+}
+
+.loading::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    border: 4px solid rgba(255, 255, 255, 0.1);
+    border-top: 4px solid var(--primary);
+    border-radius: 50%;
+    animation: spinner 1s linear infinite;
+    transform: translate(-50%, -50%);
+}
+
+/* ==========================================
+   SKELETON LOADING
+   ========================================== */
+
+.skeleton {
+    background: linear-gradient(90deg, var(--card) 25%, var(--bg-light) 50%, var(--card) 75%);
+    background-size: 200% 100%;
+    animation: skeletonPulse 1.5s ease-in-out infinite;
+    border-radius: 8px;
+    min-height: 60px;
+}
+
+.skeleton-text {
+    height: 16px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.skeleton-title {
+    height: 30px;
+    width: 60%;
+    margin-bottom: 15px;
+}
+
+.skeleton-image {
+    height: 200px;
+    border-radius: 12px;
+}
+
+/* ==========================================
+   GRADIENTES
+   ========================================== */
+
+.gradient-primary {
+    background: linear-gradient(135deg, var(--primary), var(--secondary)) !important;
+}
+
+.gradient-dark {
+    background: linear-gradient(135deg, var(--bg-dark), var(--bg-light)) !important;
+}
+
+.gradient-card {
+    background: linear-gradient(145deg, var(--card), var(--bg-light)) !important;
+}
+
+/* ==========================================
+   GLASS EFFECT (UTILITÁRIO)
+   ========================================== */
+
+.glass {
+    background: rgba(255, 255, 255, 0.05) !important;
+    backdrop-filter: blur(18px) !important;
+    -webkit-backdrop-filter: blur(18px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+
+.glass-dark {
+    background: rgba(8, 17, 31, 0.8) !important;
+    backdrop-filter: blur(20px) !important;
+    -webkit-backdrop-filter: blur(20px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.05) !important;
+}
+
+/* ==========================================
+   RESPONSIVE UTILITIES (AJUSTES MANUAIS)
+   ========================================== */
+
+/* Esconder em mobile */
+.hide-mobile {
+    display: block !important;
+}
+
+.hide-tablet {
+    display: block !important;
+}
+
+.hide-desktop {
+    display: none !important;
+}
+
+@media (max-width: 991px) {
+    .hide-mobile {
+        display: none !important;
+    }
+    .show-mobile {
+        display: block !important;
+    }
+    .hide-tablet {
+        display: none !important;
+    }
+}
+
+@media (min-width: 992px) {
+    .show-desktop {
+        display: block !important;
+    }
+    .hide-desktop {
+        display: none !important;
+    }
+}
+
+/* ==========================================
+   PÁGINAS INTERNAS (PADRÃO)
+   ========================================== */
+
+.page-header {
+    padding: 150px 0 80px;
+    background: var(--bg-dark);
+    border-bottom: 1px solid var(--border);
+    text-align: center;
+}
+
+.page-header h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.page-header p {
+    font-size: 1.2rem;
+    color: var(--text);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* ==========================================
+   BREADCRUMB
+   ========================================== */
+
+.breadcrumb-custom {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 10px 0;
+    font-size: 0.9rem;
+    color: var(--text-light);
+}
+
+.breadcrumb-custom a {
+    color: var(--primary);
+    transition: color 0.3s ease;
+}
+
+.breadcrumb-custom a:hover {
+    color: var(--secondary);
+}
+
+.breadcrumb-custom .separator {
+    color: var(--text-light);
+    margin: 0 5px;
+}
+
+/* ==========================================
+   PAGINAÇÃO
+   ========================================== */
+
+.pagination-custom {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.pagination-custom .page-item {
+    display: inline-block;
+}
+
+.pagination-custom .page-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    background: var(--card);
+    color: var(--text);
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.pagination-custom .page-link:hover {
+    background: var(--primary);
+    color: var(--white);
+    border-color: var(--primary);
+    transform: translateY(-2px);
+}
+
+.pagination-custom .page-item.active .page-link {
+    background: var(--primary);
+    color: var(--white);
+    border-color: var(--primary);
+}
+
+/* ==========================================
+   TOOLTIP PERSONALIZADO
+   ========================================== */
+
+.tooltip-custom {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip-custom .tooltip-text {
+    visibility: hidden;
+    opacity: 0;
+    width: 200px;
+    background: var(--card);
+    color: var(--white);
+    text-align: center;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    position: absolute;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 0.3s ease;
+    font-size: 0.85rem;
+    z-index: 100;
+}
+
+.tooltip-custom .tooltip-text::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 6px solid transparent;
+    border-top-color: var(--card);
+}
+
+.tooltip-custom:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* ==========================================
+   NOTIFICAÇÃO TOAST
+   ========================================== */
+
+.toast-custom {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--card);
+    color: var(--white);
+    padding: 15px 30px;
+    border-radius: 14px;
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow-lg);
+    z-index: 9999;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease;
+}
+
+.toast-custom.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.toast-custom.success {
+    border-color: var(--success);
+}
+
+.toast-custom.error {
+    border-color: var(--danger);
+}
+
+/* ==========================================
+   ANIMAÇÃO DE CARREGAMENTO DA PÁGINA
+   ========================================== */
+
+.page-loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 99999;
+    transition: opacity 0.6s ease, visibility 0.6s ease;
+}
+
+.page-loader.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.page-loader .loader {
+    width: 50px;
+    height: 50px;
+    border: 4px solid rgba(37, 99, 235, 0.1);
+    border-top: 4px solid var(--primary);
+    border-radius: 50%;
+    animation: spinner 1s linear infinite;
+}
+
+/* ==========================================
+   BOTÃO DE FECHAR (MODAL, ALERTA)
+   ========================================== */
+
+.btn-close-custom {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1px solid var(--border);
+    background: transparent;
+    color: var(--text);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-close-custom:hover {
+    background: var(--card);
+    color: var(--white);
+    transform: rotate(90deg);
+}
+
+/* ==========================================
+   DIVISOR DE SEÇÃO
+   ========================================== */
+
+.section-divider {
+    width: 60px;
+    height: 3px;
+    background: var(--primary);
+    border-radius: 10px;
+    margin: 20px auto 30px;
+}
+
+.section-divider-center {
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary), var(--secondary));
+    border-radius: 10px;
+    margin: 20px auto 30px;
+}
+
+/* ==========================================
+   MÍDIA EMBUTIDA (VÍDEOS, IFRAMES)
+   ========================================== */
+
+.embed-responsive {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 0;
+    overflow: hidden;
+}
+
+.embed-responsive::before {
+    display: block;
+    content: "";
+}
+
+.embed-responsive-16by9::before {
+    padding-top: 56.25%;
+}
+
+.embed-responsive-4by3::before {
+    padding-top: 75%;
+}
+
+.embed-responsive-21by9::before {
+    padding-top: 42.857%;
+}
+
+.embed-responsive .embed-item {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* ==========================================
+   TABELAS
+   ========================================== */
+
+.table-custom {
+    width: 100%;
+    border-collapse: collapse;
+    color: var(--text);
+}
+
+.table-custom th,
+.table-custom td {
+    padding: 15px 20px;
+    border-bottom: 1px solid var(--border);
+    text-align: left;
+}
+
+.table-custom th {
+    color: var(--white);
+    font-weight: 600;
+    background: var(--bg-light);
+}
+
+.table-custom tr:hover td {
+    background: rgba(37, 99, 235, 0.05);
+}
+
+.table-custom.striped tbody tr:nth-child(odd) {
+    background: rgba(255, 255, 255, 0.02);
+}
+
+/* ==========================================
+   LISTAS
+   ========================================== */
+
+.list-custom {
+    list-style: none;
+    padding: 0;
+}
+
+.list-custom li {
+    padding: 10px 0;
+    color: var(--text);
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.list-custom li:last-child {
+    border-bottom: none;
+}
+
+.list-custom li i {
+    color: var(--primary);
+    width: 20px;
+}
+
+/* ==========================================
+   QUOTES / CITAÇÕES
+   ========================================== */
+
+blockquote {
+    background: var(--card);
+    border-left: 4px solid var(--primary);
+    padding: 20px 25px;
+    border-radius: 0 14px 14px 0;
+    margin: 20px 0;
+}
+
+blockquote p {
+    font-size: 1.1rem;
+    font-style: italic;
+    color: var(--white);
+    margin-bottom: 10px;
+}
+
+blockquote footer {
+    color: var(--text-light);
+    font-size: 0.9rem;
+}
+
+/* ==========================================
+   CÓDIGO
+   ========================================== */
+
+code {
+    background: var(--card);
+    padding: 3px 10px;
+    border-radius: 6px;
+    font-family: 'Courier New', monospace;
+    font-size: 0.9rem;
+    color: var(--secondary);
+    border: 1px solid var(--border);
+}
+
+pre {
+    background: var(--bg-dark);
+    padding: 20px;
+    border-radius: 14px;
+    border: 1px solid var(--border);
+    overflow-x: auto;
+    margin: 20px 0;
+}
+
+pre code {
+    background: transparent;
+    border: none;
+    padding: 0;
+    color: var(--text);
+    font-size: 0.9rem;
+}
+
+/* ==========================================
+   IMAGEM COM LEGENDA
+   ========================================== */
+
+.figure-custom {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.figure-custom img {
+    border-radius: 14px;
+    border: 1px solid var(--border);
+}
+
+.figure-custom figcaption {
+    margin-top: 10px;
+    color: var(--text-light);
+    font-size: 0.9rem;
+}
+
+/* ==========================================
+   BOTÃO DE COMPARTILHAR
+   ========================================== */
+
+.share-buttons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.share-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 18px;
+    border-radius: 50px;
+    border: none;
+    color: white;
+    font-weight: 500;
+    font-size: 0.85rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.share-btn:hover {
+    transform: translateY(-3px);
+}
+
+.share-btn.facebook {
+    background: #1877f2;
+}
+.share-btn.twitter {
+    background: #000000;
+}
+.share-btn.linkedin {
+    background: #0a66c2;
+}
+.share-btn.whatsapp {
+    background: #25d366;
+}
+.share-btn.email {
+    background: #ea4335;
+}
+
+/* ==========================================
+   ANIMAÇÃO DE FOCO PARA ACESSIBILIDADE
+   ========================================== */
+
+:focus-visible {
+    outline: 3px solid var(--primary);
+    outline-offset: 2px;
+    border-radius: 4px;
+}
+
+/* ==========================================
+   SKIP TO CONTENT (ACESSIBILIDADE)
+   ========================================== */
+
+.skip-to-content {
+    position: fixed;
+    top: -100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--primary);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 0 0 12px 12px;
+    z-index: 99999;
+    font-weight: 600;
+    transition: top 0.3s ease;
+}
+
+.skip-to-content:focus {
+    top: 0;
+}
+
+/* ==========================================
+   DARK MODE TOGGLE (UTILITÁRIO)
+   ========================================== */
+
+.theme-toggle {
+    background: none;
+    border: none;
+    color: var(--text);
+    font-size: 1.3rem;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.theme-toggle:hover {
+    background: var(--card);
+    color: var(--white);
+}
+
+/* ==========================================
+   NOTIFICAÇÃO DE COOKIES
+   ========================================== */
+
+.cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: var(--bg-dark);
+    border-top: 1px solid var(--border);
+    padding: 20px 0;
+    z-index: 9998;
+    transform: translateY(100%);
+    transition: transform 0.5s ease;
+}
+
+.cookie-banner.show {
+    transform: translateY(0);
+}
+
+.cookie-banner .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.cookie-banner p {
+    margin: 0;
+    flex: 1;
+    min-width: 200px;
+}
+
+.cookie-banner .btn-group {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
