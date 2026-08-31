@@ -1159,3 +1159,32 @@ pre code {
     gap: 10px;
     flex-wrap: wrap;
 }
+
+/* ==========================================
+   FIX CONTRASTE - texto legível nos cards
+   ========================================== */
+
+.text-muted {
+    color: #94a3b8 !important;   /* cinza claro legível no fundo escuro */
+}
+
+.glass-card .text-muted,
+.glass-card p,
+.glass-card li {
+    color: #a8b5c7 !important;
+}
+
+.glass-card h4,
+.glass-card h3,
+.glass-card .fw-bold {
+    color: #ffffff !important;
+}
+
+.glass-card ul li {
+    opacity: 1;
+}
+
+/* Listas com check dentro dos cards */
+.glass-card .list-unstyled li {
+    color: #b0bcc9 !important;
+}
