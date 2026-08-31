@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Projetos | FuturoLab</title>
+
+    <meta name="description"
+        content="Conheça projetos de engenharia elétrica, automação industrial e IoT desenvolvidos pelo FuturoLab.">
+    <meta name="author" content="FuturoLab">
+
+    <link rel="icon" type="image/png" href="images/logo-futurolab.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo-futurolab.png" alt="FuturoLab" height="36">
+                <span class="fw-bold ms-2">FuturoLab</span>
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link" href="servicos.html">Serviços</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="projetos.html">Projetos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <a href="contato.html" class="btn btn-primary btn-sm rounded-pill px-4">
+                            <i class="fas fa-paper-plane me-2"></i>Solicitar Orçamento
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HEADER -->
+    <section class="page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <span class="badge-custom mb-3">
+                        <i class="fas fa-folder-open me-2"></i>Portfólio
+                    </span>
+                    <h1 class="display-4 fw-bold">
+                        Projetos <span class="gradient-text">realizados</span>
+                    </h1>
+                    <p class="lead text-muted">
+                        Alguns exemplos de soluções em engenharia elétrica,
+                        automação e IoT. Mais projetos serão adicionados em breve.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJETOS -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4">
+
+                <!-- Projeto 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="glass-card h-100 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=600&h=300&fit=crop"
+                            alt="Monitoramento IoT" class="w-100" style="height:200px;object-fit:cover;">
+                        <div class="p-4">
+                            <span class="badge bg-primary bg-opacity-25 text-primary mb-2">IoT / Raspberry Pi</span>
+                            <h4 class="fw-bold mb-2">Monitoramento remoto de sensores</h4>
+                            <p class="text-muted small mb-3">
+                                Gateway com Raspberry Pi coletando dados de temperatura e umidade,
+                                enviando via MQTT e exibindo em dashboard Node-RED.
+                            </p>
+                            <div class="d-flex flex-wrap gap-2">
+                                <span class="badge rounded-pill" style="background:rgba(55,118,171,0.2);color:#3776AB;">Python</span>
+                                <span class="badge rounded-pill" style="background:rgba(143,0,0,0.2);color:#c44;">Node-RED</span>
+                                <span class="badge rounded-pill" style="background:rgba(197,26,74,0.2);color:#C51A4A;">Raspberry Pi</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projeto 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="glass-card h-100 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?w=600&h=300&fit=crop"
+                            alt="Automação Industrial" class="w-100" style="height:200px;object-fit:cover;">
+                        <div class="p-4">
+                            <span class="badge bg-info bg-opacity-25 text-info mb-2">Automação</span>
+                            <h4 class="fw-bold mb-2">Modernização de linha de produção</h4>
+                            <p class="text-muted small mb-3">
+                                Atualização de CLP, integração de sensores e desenvolvimento
+                                de tela de supervisão para controle e alarmes.
+                            </p>
+                            <div class="d-flex flex-wrap gap-2">
+                                <span class="badge rounded-pill" style="background:rgba(6,182,212,0.2);color:#06b6d4;">CLP</span>
+                                <span class="badge rounded-pill" style="background:rgba(37,99,235,0.2);color:#2563eb;">SCADA</span>
+                                <span class="badge rounded-pill" style="background:rgba(34,197,94,0.2);color:#22c55e;">Modbus</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projeto 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="glass-card h-100 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1621905252507-b35492cc74f4?w=600&h=300&fit=crop"
+                            alt="Projeto Elétrico" class="w-100" style="height:200px;object-fit:cover;">
+                        <div class="p-4">
+                            <span class="badge bg-warning bg-opacity-25 text-warning mb-2">Engenharia Elétrica</span>
+                            <h4 class="fw-bold mb-2">Projeto elétrico industrial</h4>
+                            <p class="text-muted small mb-3">
+                                Dimensionamento de circuitos, quadros de distribuição
+                                e documentação técnica completa para instalação industrial.
+                            </p>
+                            <div class="d-flex flex-wrap gap-2">
+                                <span class="badge rounded-pill" style="background:rgba(245,158,11,0.2);color:#f59e0b;">NBR 5410</span>
+                                <span class="badge rounded-pill" style="background:rgba(37,99,235,0.2);color:#2563eb;">Projeto</span>
+                                <span class="badge rounded-pill" style="background:rgba(34,197,94,0.2);color:#22c55e;">ART</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projeto 4 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="glass-card h-100 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1553406830-ef2513450d64?w=600&h=300&fit=crop"
+                            alt="Dashboard IoT" class="w-100" style="height:200px;object-fit:cover;">
+                        <div class="p-4">
+                            <span class="badge bg-success bg-opacity-25 text-success mb-2">Python / Dashboard</span>
+                            <h4 class="fw-bold mb-2">Dashboard de consumo energético</h4>
+                            <p class="text-muted small mb-3">
+                                Coleta de dados de medidores via Python, armazenamento
+                                e visualização em tempo real com alertas de consumo.
+                            </p>
+                            <div class="d-flex flex-wrap gap-2">
+                                <span class="badge rounded-pill" style="background:rgba(55,118,171,0.2);color:#3776AB;">Python</span>
+                                <span class="badge rounded-pill" style="background:rgba(34,197,94,0.2);color:#22c55e;">MQTT</span>
+                                <span class="badge rounded-pill" style="background:rgba(124,58,237,0.2);color:#7c3aed;">Dashboard</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projeto 5 - Placeholder -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="glass-card h-100 p-4 d-flex flex-column align-items-center justify-content-center text-center" style="min-height:320px;">
+                        <i class="fas fa-plus-circle fa-3x text-muted mb-3"></i>
+                        <h4 class="fw-bold mb-2">Seu projeto aqui</h4>
+                        <p class="text-muted small mb-3">
+                            Tem um desafio de automação, IoT ou engenharia elétrica?
+                            Vamos conversar.
+                        </p>
+                        <a href="contato.html" class="btn btn-outline-light btn-sm rounded-pill px-4">
+                            Falar conosco
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Projeto 6 - Placeholder -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="glass-card h-100 p-4 d-flex flex-column align-items-center justify-content-center text-center" style="min-height:320px;">
+                        <i class="fas fa-lightbulb fa-3x text-muted mb-3"></i>
+                        <h4 class="fw-bold mb-2">Em breve</h4>
+                        <p class="text-muted small mb-0">
+                            Mais cases serão publicados em breve.
+                            Acompanhe as atualizações.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-5" style="background: var(--bg-light);">
+        <div class="container">
+            <div class="glass-card p-5 text-center">
+                <h2 class="section-title mb-3">
+                    Quer um projeto sob medida?
+                </h2>
+                <p class="text-muted mb-4 mx-auto" style="max-width:520px;">
+                    Conte o desafio. Elaboramos a solução técnica e a proposta
+                    de forma clara e objetiva.
+                </p>
+                <a href="contato.html" class="btn btn-primary btn-lg rounded-pill px-5">
+                    <i class="fas fa-paper-plane me-2"></i>
+                    Solicitar orçamento
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-5" style="background: var(--bg-dark); border-top: 1px solid var(--border);">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <a class="d-flex align-items-center mb-3 text-decoration-none" href="index.html">
+                        <img src="images/logo-futurolab.png" alt="FuturoLab" height="32">
+                        <span class="fw-bold ms-2 text-white">FuturoLab</span>
+                    </a>
+                    <p class="text-muted small">
+                        Engenharia elétrica, automação industrial e soluções IoT
+                        com Python, Node-RED e Raspberry Pi.
+                    </p>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h6 class="fw-bold mb-3">Navegação</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="servicos.html" class="footer-link">Serviços</a></li>
+                        <li class="mb-2"><a href="projetos.html" class="footer-link">Projetos</a></li>
+                        <li class="mb-2"><a href="sobre.html" class="footer-link">Sobre</a></li>
+                        <li class="mb-2"><a href="contato.html" class="footer-link">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <h6 class="fw-bold mb-3">Serviços</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="servicos.html" class="footer-link">Engenharia Elétrica</a></li>
+                        <li class="mb-2"><a href="servicos.html" class="footer-link">Automação Industrial</a></li>
+                        <li class="mb-2"><a href="servicos.html" class="footer-link">IoT & Raspberry Pi</a></li>
+                        <li class="mb-2"><a href="servicos.html" class="footer-link">Python & Node-RED</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h6 class="fw-bold mb-3">Contato</h6>
+                    <p class="text-muted small mb-2">
+                        <i class="fas fa-envelope me-2 text-primary"></i>
+                        contato@futurolab.com.br
+                    </p>
+                    <p class="text-muted small mb-2">
+                        <i class="fab fa-whatsapp me-2 text-success"></i>
+                        (11) 99999-9999
+                    </p>
+                    <p class="text-muted small">
+                        <i class="fas fa-map-marker-alt me-2 text-secondary"></i>
+                        Brasil
+                    </p>
+                </div>
+            </div>
+            <hr class="my-4" style="border-color: var(--border);">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+                <p class="text-muted small mb-2 mb-md-0">&copy; 2026 FuturoLab. Todos os direitos reservados.</p>
+                <p class="text-muted small mb-0">Engenharia • Automação • IoT</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

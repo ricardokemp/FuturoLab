@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FuturoLab | Engenharia Elétrica, Automação e IoT</title>
+
+    <meta name="description"
+        content="FuturoLab - Serviços de Engenharia Elétrica, Automação Industrial, IoT com Python, Node-RED e Raspberry Pi. Soluções práticas para indústria e negócios.">
+    <meta name="keywords"
+        content="engenharia elétrica, automação industrial, IoT, Python, Node-RED, Raspberry Pi, CLP, SCADA, projetos elétricos">
+    <meta name="author" content="FuturoLab">
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:title" content="FuturoLab | Engenharia Elétrica, Automação e IoT">
+    <meta property="og:description"
+        content="Serviços de Engenharia Elétrica, Automação Industrial e IoT com Python, Node-RED e Raspberry Pi.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ricardokemp.github.io/FuturoLab/">
+    <meta property="og:image" content="https://ricardokemp.github.io/FuturoLab/images/og-image.jpg">
+
+    <link rel="icon" type="image/png" href="images/logo-futurolab.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo-futurolab.png" alt="FuturoLab" height="36">
+                <span class="fw-bold ms-2">FuturoLab</span>
+            </a>
+
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="servicos.html">Serviços</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projetos.html">Projetos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sobre.html">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contato.html">Contato</a>
+                    </li>
+                    <li class="nav-item ms-lg-3">
+                        <a href="contato.html" class="btn btn-primary btn-sm rounded-pill px-4">
+                            <i class="fas fa-paper-plane me-2"></i>Solicitar Orçamento
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero" id="hero">
+        <div class="container">
+            <div class="row align-items-center min-vh-100 py-5">
+                <div class="col-lg-6 hero-content">
+
+                    <span class="badge-hero">
+                        <i class="fas fa-bolt me-2"></i>
+                        Engenharia • Automação • IoT
+                    </span>
+
+                    <h1 class="hero-title">
+                        Soluções reais em<br>
+                        <span class="gradient-text">engenharia e tecnologia.</span>
+                    </h1>
+
+                    <p class="hero-subtitle">
+                        Projetos de <strong>engenharia elétrica</strong>, 
+                        <strong>automação industrial</strong> e 
+                        <strong>IoT</strong> com Python, Node-RED e Raspberry Pi.
+                        Do projeto à implementação.
+                    </p>
+
+                    <div class="hero-buttons mt-4">
+                        <a href="servicos.html" class="btn btn-primary btn-lg rounded-pill px-5 me-3">
+                            <i class="fas fa-cogs me-2"></i>
+                            Nossos Serviços
+                        </a>
+                        <a href="contato.html" class="btn btn-outline-light btn-lg rounded-pill px-5">
+                            <i class="fas fa-comments me-2"></i>
+                            Fale Conosco
+                        </a>
+                    </div>
+
+                    <div class="hero-stats mt-5">
+                        <div class="d-flex gap-5 flex-wrap">
+                            <div>
+                                <span class="stat-number">10+</span>
+                                <span class="stat-label">Anos de experiência</span>
+                            </div>
+                            <div>
+                                <span class="stat-number">50+</span>
+                                <span class="stat-label">Projetos entregues</span>
+                            </div>
+                            <div>
+                                <span class="stat-number">100%</span>
+                                <span class="stat-label">Foco em resultado</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-6 hero-image-wrapper">
+                    <div class="hero-image-container">
+                        <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&h=600&fit=crop"
+                            alt="Automação Industrial e Engenharia"
+                            class="hero-img rounded-4 shadow-lg">
+                        <div class="hero-floating-card">
+                            <i class="fas fa-microchip text-primary fa-2x mb-2"></i>
+                            <p class="mb-0 small fw-semibold">Python • Node-RED • Raspberry Pi</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TECNOLOGIAS -->
+    <section class="py-5" style="background: var(--bg-light);">
+        <div class="container">
+            <div class="row g-4 align-items-center text-center">
+                <div class="col-6 col-md-2">
+                    <i class="fab fa-python fa-3x" style="color:#3776AB;"></i>
+                    <p class="small text-muted mt-2 mb-0">Python</p>
+                </div>
+                <div class="col-6 col-md-2">
+                    <i class="fas fa-project-diagram fa-3x" style="color:#8F0000;"></i>
+                    <p class="small text-muted mt-2 mb-0">Node-RED</p>
+                </div>
+                <div class="col-6 col-md-2">
+                    <i class="fas fa-microchip fa-3x" style="color:#C51A4A;"></i>
+                    <p class="small text-muted mt-2 mb-0">Raspberry Pi</p>
+                </div>
+                <div class="col-6 col-md-2">
+                    <i class="fas fa-industry fa-3x" style="color:#06b6d4;"></i>
+                    <p class="small text-muted mt-2 mb-0">Automação</p>
+                </div>
+                <div class="col-6 col-md-2">
+                    <i class="fas fa-bolt fa-3x" style="color:#f59e0b;"></i>
+                    <p class="small text-muted mt-2 mb-0">Elétrica</p>
+                </div>
+                <div class="col-6 col-md-2">
+                    <i class="fas fa-network-wired fa-3x" style="color:#22c55e;"></i>
+                    <p class="small text-muted mt-2 mb-0">IoT / MQTT</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVIÇOS EM DESTAQUE -->
+    <section class="py-5" id="servicos">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="badge-custom mb-3">
+                    <i class="fas fa-briefcase me-2"></i>O que fazemos
+                </span>
+                <h2 class="section-title">
+                    Serviços especializados em <span class="gradient-text">engenharia e tecnologia</span>
+                </h2>
+                <p class="section-description">
+                    Do projeto elétrico à automação inteligente com IoT.
+                    Soluções sob medida para sua indústria ou negócio.
+                </p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Serviço 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="glass-card h-100 p-4">
+                        <div class="mb-3">
+                            <span class="d-inline-flex align-items-center justify-content-center rounded-3"
+                                style="width:56px;height:56px;background:rgba(37,99,235,0.15);">
+                                <i class="fas fa-bolt fa-xl text-primary"></i>
+                            </span>
+                        </div>
+                        <h4 class="fw-bold mb-3">Engenharia Elétrica</h4>
+                        <p class="text-muted mb-4">
+                            Projetos elétricos industriais e prediais, dimensionamento,
+                            laudos técnicos, instalações e modernização de sistemas.
+                        </p>
+                        <ul class="list-unstyled text-muted small mb-0">
+                            <li class="mb-2"><i class="fas fa-check text-primary me-2"></i>Projetos elétricos</li>
+                            <li class="mb-2"><i class="fas fa-check text-primary me-2"></i>Laudos e ART</li>
+                            <li class="mb-2"><i class="fas fa-check text-primary me-2"></i>Instalações industriais</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Serviço 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="glass-card h-100 p-4">
+                        <div class="mb-3">
+                            <span class="d-inline-flex align-items-center justify-content-center rounded-3"
+                                style="width:56px;height:56px;background:rgba(6,182,212,0.15);">
+                                <i class="fas fa-industry fa-xl text-secondary"></i>
+                            </span>
+                        </div>
+                        <h4 class="fw-bold mb-3">Automação Industrial</h4>
+                        <p class="text-muted mb-4">
+                            Programação de CLPs, sistemas SCADA, integração de máquinas
+                            e modernização de linhas de produção.
+                        </p>
+                        <ul class="list-unstyled text-muted small mb-0">
+                            <li class="mb-2"><i class="fas fa-check text-secondary me-2"></i>CLPs e IHMs</li>
+                            <li class="mb-2"><i class="fas fa-check text-secondary me-2"></i>SCADA / Supervisório</li>
+                            <li class="mb-2"><i class="fas fa-check text-secondary me-2"></i>Integração de sistemas</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Serviço 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="glass-card h-100 p-4">
+                        <div class="mb-3">
+                            <span class="d-inline-flex align-items-center justify-content-center rounded-3"
+                                style="width:56px;height:56px;background:rgba(124,58,237,0.15);">
+                                <i class="fas fa-microchip fa-xl" style="color:#7c3aed;"></i>
+                            </span>
+                        </div>
+                        <h4 class="fw-bold mb-3">IoT com Raspberry Pi</h4>
+                        <p class="text-muted mb-4">
+                            Soluções de monitoramento remoto, sensores, edge computing
+                            e dashboards em tempo real com Raspberry Pi.
+                        </p>
+                        <ul class="list-unstyled text-muted small mb-0">
+                            <li class="mb-2"><i class="fas fa-check me-2" style="color:#7c3aed;"></i>Gateways IoT</li>
+                            <li class="mb-2"><i class="fas fa-check me-2" style="color:#7c3aed;"></i>Sensores e aquisição</li>
+                            <li class="mb-2"><i class="fas fa-check me-2" style="color:#7c3aed;"></i>Dashboards remotos</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Serviço 4 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="glass-card h-100 p-4">
+                        <div class="mb-3">
+                            <span class="d-inline-flex align-items-center justify-content-center rounded-3"
+                                style="width:56px;height:56px;background:rgba(55,118,171,0.15);">
+                                <i class="fab fa-python fa-xl" style="color:#3776AB;"></i>
+                            </span>
+                        </div>
+                        <h4 class="fw-bold mb-3">Python para Automação</h4>
+                        <p class="text-muted mb-4">
+                            Scripts e aplicações em Python para coleta de dados,
+                            integração com equipamentos, APIs e automações industriais.
+                        </p>
+                        <ul class="list-unstyled text-muted small mb-0">
+                            <li class="mb-2"><i class="fas fa-check me-2" style="color:#3776AB;"></i>Coleta de dados</li>
+                            <li class="mb-2"><i class="fas fa-check me-2" style="color:#3776AB;"></i>APIs e integrações</li>
+                            <li class="mb-2"><i class="fas fa-check me-2" style="color:#3776AB;"></i>Automação de processos</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Serviço 5 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="glass-card h-100 p-4">
+                        <div class="mb-3">
+                            <span class="d-inline-flex align-items-center justify-content-center rounded-3"
+                                style="width:56px;height:56px;background:rgba(143,0,0,0.15);">
+                                <i class="fas fa-project-diagram fa-xl" style="color:#8F0000;"></i>
+                            </span>
+                        </div>
+                        <h4 class="fw-bold mb-3">Node-RED</h4>
+                        <p class="text-muted mb-4">
+                            Fluxos de automação visual, integração de protocolos
+                            (MQTT, Modbus, HTTP) e dashboards rápidos e flexíveis.
+                        </p>
+                        <ul class="list-unstyled text-muted small mb-0">
+                            <li class="mb-2"><i class="fas fa-check me-2" style="color:#8F0000;"></i>Fluxos de automação</li>
+                            <li class="mb-2"><i class="fas fa-check me-2" style="color:#8F0000;"></i>MQTT / Modbus</li>
+                            <li class="mb-2"><i class="fas fa-check me-2" style="color:#8F0000;"></i>Dashboards interativos</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Serviço 6 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="glass-card h-100 p-4">
+                        <div class="mb-3">
+                            <span class="d-inline-flex align-items-center justify-content-center rounded-3"
+                                style="width:56px;height:56px;background:rgba(34,197,94,0.15);">
+                                <i class="fas fa-network-wired fa-xl text-success"></i>
+                            </span>
+                        </div>
+                        <h4 class="fw-bold mb-3">Consultoria & Projetos</h4>
+                        <p class="text-muted mb-4">
+                            Análise de viabilidade, especificação técnica,
+                            acompanhamento de implementação e suporte especializado.
+                        </p>
+                        <ul class="list-unstyled text-muted small mb-0">
+                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Diagnóstico técnico</li>
+                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Especificação de soluções</li>
+                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Suporte e treinamento</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-5">
+                <a href="servicos.html" class="btn btn-primary btn-lg rounded-pill px-5">
+                    Ver todos os serviços <i class="fas fa-arrow-right ms-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- COMO TRABALHAMOS -->
+    <section class="py-5" style="background: var(--bg-light);">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="badge-custom mb-3">
+                    <i class="fas fa-route me-2"></i>Processo
+                </span>
+                <h2 class="section-title">
+                    Como <span class="gradient-text">trabalhamos</span>
+                </h2>
+                <p class="section-description">
+                    Um processo claro e transparente do primeiro contato à entrega.
+                </p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-3 col-6">
+                    <div class="text-center">
+                        <div class="d-inline-flex align-items-center justify-content-center rounded-circle mb-3"
+                            style="width:64px;height:64px;background:linear-gradient(135deg,var(--primary),var(--secondary));">
+                            <span class="fw-bold fs-4">1</span>
+                        </div>
+                        <h5 class="fw-bold">Conversa inicial</h5>
+                        <p class="text-muted small">Entendemos sua necessidade e o contexto do projeto.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="text-center">
+                        <div class="d-inline-flex align-items-center justify-content-center rounded-circle mb-3"
+                            style="width:64px;height:64px;background:linear-gradient(135deg,var(--primary),var(--secondary));">
+                            <span class="fw-bold fs-4">2</span>
+                        </div>
+                        <h5 class="fw-bold">Proposta técnica</h5>
+                        <p class="text-muted small">Escopo, tecnologias e estimativa clara de prazo e investimento.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="text-center">
+                        <div class="d-inline-flex align-items-center justify-content-center rounded-circle mb-3"
+                            style="width:64px;height:64px;background:linear-gradient(135deg,var(--primary),var(--secondary));">
+                            <span class="fw-bold fs-4">3</span>
+                        </div>
+                        <h5 class="fw-bold">Execução</h5>
+                        <p class="text-muted small">Desenvolvimento, testes e implementação com acompanhamento.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="text-center">
+                        <div class="d-inline-flex align-items-center justify-content-center rounded-circle mb-3"
+                            style="width:64px;height:64px;background:linear-gradient(135deg,var(--primary),var(--secondary));">
+                            <span class="fw-bold fs-4">4</span>
+                        </div>
+                        <h5 class="fw-bold">Entrega & suporte</h5>
+                        <p class="text-muted small">Documentação, treinamento e suporte pós-entrega.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-5">
+        <div class="container">
+            <div class="glass-card p-5 text-center">
+                <h2 class="section-title mb-3">
+                    Pronto para transformar seu <span class="gradient-text">projeto</span>?
+                </h2>
+                <p class="text-muted mb-4 mx-auto" style="max-width:560px;">
+                    Conte sobre sua necessidade. Seja um projeto elétrico,
+                    uma automação industrial ou uma solução IoT com Raspberry Pi —
+                    vamos encontrar a melhor forma de entregar resultado.
+                </p>
+                <a href="contato.html" class="btn btn-primary btn-lg rounded-pill px-5">
+                    <i class="fas fa-paper-plane me-2"></i>
+                    Solicitar orçamento
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-5" style="background: var(--bg-dark); border-top: 1px solid var(--border);">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <a class="d-flex align-items-center mb-3 text-decoration-none" href="index.html">
+                        <img src="images/logo-futurolab.png" alt="FuturoLab" height="32">
+                        <span class="fw-bold ms-2 text-white">FuturoLab</span>
+                    </a>
+                    <p class="text-muted small">
+                        Engenharia elétrica, automação industrial e soluções IoT
+                        com Python, Node-RED e Raspberry Pi.
+                    </p>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h6 class="fw-bold mb-3">Navegação</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="servicos.html" class="footer-link">Serviços</a></li>
+                        <li class="mb-2"><a href="projetos.html" class="footer-link">Projetos</a></li>
+                        <li class="mb-2"><a href="sobre.html" class="footer-link">Sobre</a></li>
+                        <li class="mb-2"><a href="contato.html" class="footer-link">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <h6 class="fw-bold mb-3">Serviços</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="servicos.html" class="footer-link">Engenharia Elétrica</a></li>
+                        <li class="mb-2"><a href="servicos.html" class="footer-link">Automação Industrial</a></li>
+                        <li class="mb-2"><a href="servicos.html" class="footer-link">IoT & Raspberry Pi</a></li>
+                        <li class="mb-2"><a href="servicos.html" class="footer-link">Python & Node-RED</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h6 class="fw-bold mb-3">Contato</h6>
+                    <p class="text-muted small mb-2">
+                        <i class="fas fa-envelope me-2 text-primary"></i>
+                        contato@futurolab.com.br
+                    </p>
+                    <p class="text-muted small mb-2">
+                        <i class="fab fa-whatsapp me-2 text-success"></i>
+                        (11) 99999-9999
+                    </p>
+                    <p class="text-muted small">
+                        <i class="fas fa-map-marker-alt me-2 text-secondary"></i>
+                        Brasil
+                    </p>
+                </div>
+            </div>
+            <hr class="my-4" style="border-color: var(--border);">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+                <p class="text-muted small mb-2 mb-md-0">
+                    &copy; 2026 FuturoLab. Todos os direitos reservados.
+                </p>
+                <p class="text-muted small mb-0">
+                    Engenharia • Automação • IoT
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
